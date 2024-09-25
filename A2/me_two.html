@@ -1,8 +1,251 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me :)</title>
+    <style>
+        body {
+            font-family: "Maison Neue", sans-serif;
+        }
+        h1, h2 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        ul {
+            border: 2px solid #333;
+            width: 300px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+        .box {
+            display: flex;
+            background-image: url('images/ume.jpg');
+            background-size: cover;
+            background-position: center;
+            width: 300px;
+            height: 300px;
+            margin-right: 20px;
+        }
+        .food-text {
+            width: 300px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        td, th {
+            padding: 10px;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+            text-align: right;
+        }
+        .form-row {
+            margin-bottom: 10px;
+        }
+        .form-element {
+            margin-left: 10px;
+        }
+        .social-icons {
+            position: fixed;
+            top: 100px;
+            right: 35px;
+        }
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+        }
+    </style>
+    
 </head>
 <body>
-    <h1>Coming Soon!</h1>
+    <h1>Hi! I'm Susie Li</h1>
+    <h2>A recent trip</h2>
+        Over the summer, I traveled to France with my family. We started in 
+        the South of France, visiting Bordeaux, Aix-en-Provence, and the 
+        countryside of Provence. After that, we made our way to Paris, where 
+        we saw some landmarks, and finished the trip with a visit to Nice on 
+        the coast. Each place had its own unique blend of history, art, and 
+        local traditions, making the trip enjoyable and memorable.
+
+    <h2>Pet names</h2>
+    <ul>
+        <li>A pomeranian named Mochi</li>
+        <li>A hamster named Boba</li>
+        <li>A cat named Zeus</li>
+    </ul>
+        
+    <h2>Favorite restaurant</h2>
+    One of my favourite restaurants is 
+    <a href="https://davellenewyork.com">Davelle</a>, a kissaten style cafe 
+    (Japanese traditional cafe) in East Village, New York. I really like Davelle 
+    for its cozy, intimate atmosphere and its simple yet delicious Japanese menu.
+    I especially appreciate how the dishes, like their signature curry and toast, 
+    strike a perfect balance between comfort food and high-quality ingredients. 
+    It’s the perfect spot for meeting up with friends and spending an afternoon.
+
+    <h2>Favourite food</h2>
+    <div class="box"></div>
+    <div class="food-text">
+        <p>One of my favourite foods is sushi. I love serving it on an arranged
+        platter, with a variety of rolls and sashimi that showcase different 
+        textures and flavors. Eating it is all about savoring the delicate 
+        balance of fresh fish, seasoned rice, and the tangy kick of wasabi 
+        and soy sauce. Whether it's a casual meal or a special occasion, 
+        sushi can always be a fun choice.</p>
+    </div>
+    
+    <h2>4 Favorite books</h2>
+    <table>
+        <tr>
+            <th style="width: 20%">Name of the book</th>
+            <th>Book Cover</th> 
+            <th style="width: 15%;">Author</th>
+            <th>Summary</th>
+        </tr>
+        <tr>
+            <td>The Politics of Collecting: Race and the Aestheticization of Property</td>
+            <td><img src="images/collecting_cover.jpg" alt="Cover of politics collecting" 
+                style="width:220px"></td> 
+            <td>Eunsong Kim</td>
+            <td>Eunsong Kim's "The Politics of Collecting" explores how 
+                collecting practices intersect with issues of power, 
+                identity, and representation, emphasizing how these 
+                practices can both challenge and reinforce existing 
+                social hierarchies. Kim examines how collections 
+                function as sites of political and cultural negotiation, 
+                shaping and reflecting broader societal dynamics.</td>
+        </tr>
+        <tr>
+            <td>Point and Line to Plane</td>
+            <td><img src="images/kan.png" alt="Cover of Point and Line to Plane" 
+                style="width:220px"></td> 
+            <td>Wassily Kandinsky</td>
+            <td>In "Point and Line to Plane," Wassily Kandinsky, a pioneering figure
+                in abstract art and a key member of the Bauhaus movement, examines the 
+                fundamental elements of art - points, lines, and planes - and their 
+                potential to convey emotion and meaning through abstract compositions. 
+                He explores how these basic forms can be combined and manipulated 
+                to create dynamic visual experiences that transcend traditional 
+                representational art.</td>
+        </tr>
+        <tr>
+            <td>An Artist of the Floating World</td>
+            <td><img src="images/kazuo.jpg" alt="Cover of An Artist of the Floating World" 
+                style="width:220px"></td> 
+            <td>Kazuo Ishiguro</td>
+            <td>Kazuo Ishiguro's "An Artist of the Floating World" tells the story of an aging 
+                artist reflecting on his career during the Japanese imperial period and 
+                grappling with the moral dilemmas of his past work, particularly the role 
+                his art played in supporting nationalism.</td>
+        </tr>
+        <tr>
+            <td>Dear Data</td>
+            <td><img src="images/deardata.jpg" alt="deardata" style="width:220px"></td>
+            <td>Giorgia Lupi, Stefanie Posavec</td>
+            <td>"Dear Data" is a visual correspondence between data designers Giorgia Lupi 
+                and Stefanie Posavec. Each week, they choose a personal theme and collect 
+                data about their lives, transforming this data into beautiful hand-drawn 
+                visualizations, blending art and information to explore the nuances of 
+                everyday experiences.</td>
+        </tr>
+    </table>
+
+    <h2>Contact Form</h2>
+    <form>
+        <div class="form-row">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" class="form-element">
+        </div>
+        <div class="form-row">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" class="form-element">
+        </div>
+        <div class="form-row">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" class="form-element">
+        </div>
+        <div class="form-row">
+            <label for="state">State:</label>
+            <select id="state" name="state" class="form-element">
+                <option value="NY">New York</option>
+                <option value="MA">Massachusetts</option>
+                <option value="NH">New Hampshire</option>
+                <option value="ME">Maine</option>
+                <option value="VT">Vermont</option>
+                <option value="CT">Connecticut</option>
+                <option value="CA">California</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CO">Colorado</option>
+                <option value="DE">Delaware</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="MD">Maryland</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="CA">N/A</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+    <div class="social-icons">
+        <a href="https://www.facebook.com"><img src="images/fb.png" alt="Facebook Icon"></a>
+        <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter Icon"></a>
+    </div>
 </body>
 </html>
