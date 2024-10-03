@@ -23,7 +23,8 @@
 
         /* Navigation bar styles */
         nav ul {
-            display: flex; /* Use flexbox to align items horizontally */
+            display: flex; /* Flexbox for horizontal layout */
+            flex-direction: row; /* Ensure horizontal layout */
             justify-content: center; /* Center the navigation links */
             padding: 0;
             margin: 0;
@@ -42,6 +43,18 @@
 
         nav a:hover {
             text-decoration: underline; /* Underline effect on hover */
+        }
+
+        /* Mobile-specific adjustments */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: row; /* Keep items horizontal even on mobile */
+                flex-wrap: nowrap; /* Prevent wrapping */
+            }
+
+            nav li {
+                margin: 0 10px; /* Adjust margins for smaller screens */
+            }
         }
     </style>
 </head>
