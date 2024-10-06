@@ -10,60 +10,90 @@
     <title>Zero Beat - Home</title>
     <style>
         /* Internal CSS */
-        h2 {
-            color: #636363;  
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/icecream-bar2.jpeg');  
+            background-size: cover;
+            color: #fff;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fcbf64; /* Title color */
+        }
+
+        h2, h3 {
+            color: #f7f7f7;  
             text-align: center;
         }
-        p {
-            font-size: 1.2em;
-            line-height: 1.5;
-        }
-        section {
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            border-radius: 10px;
-        }
 
-        /* Navigation bar styles */
         nav ul {
-            display: flex; /* Flexbox for horizontal layout */
-            flex-direction: row; /* Ensure horizontal layout */
-            justify-content: center; /* Center the navigation links */
+            list-style-type: none;
+            display: flex; 
+            justify-content: center; 
             padding: 0;
             margin: 0;
-            list-style: none;
         }
 
-        nav li {
-            margin: 0 15px; /* Spacing between nav items */
+        nav ul li {
+            margin: 0 15px;
         }
 
         nav a {
-            text-decoration: none;
             color: #636363; 
+            text-decoration: none;
             font-size: 1.2em;
         }
 
         nav a:hover {
-            text-decoration: underline; /* Underline effect on hover */
+            color: #fcbf64; /* Hover color for links */
+            text-decoration: underline; 
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px; /* Space between sections */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
         }
 
         /* Mobile-specific adjustments */
         @media (max-width: 768px) {
             nav ul {
-                flex-direction: row; /* Keep items horizontal even on mobile */
-                flex-wrap: nowrap; /* Prevent wrapping */
+                flex-direction: column; /* Stack navigation items */
+                align-items: center; /* Center items */
             }
 
-            nav li {
-                margin: 0 10px; /* Adjust margins for smaller screens */
+            nav ul li {
+                margin: 10px 0; /* Adjust margin for mobile */
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1 style="text-align: center; color: #FFD700;">Zero Beat</h1>
+        <h1>Zero Beat</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home&nbsp;</a></li>
@@ -75,9 +105,26 @@
     </header>
     <main>
         <section>
-            <h2>Welcome to Zero Beat</h2>
-            <p style="margin-bottom: 20px;">We are a New York-based cover band specializing in artsy performances for venues like art galleries and exhibition openings. Our mission is to create a minimal yet impactful musical experience that resonates with the creative community.</p>
-            <p style="font-weight: bold;">Join us for an unforgettable musical journey!</p>
+            <h2 style="font-size: 2em; margin-bottom: 15px;">Welcome to Zero Beat</h2>
+            <p style="font-weight: bold;">We are a New York-based cover band specializing in artsy performances for venues like art galleries and exhibition openings. Our mission is to create a minimal yet impactful musical experience that resonates with the creative community.</p>
+            <p>
+                At Zero Beat, we believe in creating more than just sound. Our music is an art form that flows through minimalist spaces, blending architecture, fashion, and rhythm into a singular experience. Like the pulse of a city, our soundscapes are designed to inspire creativity, movement, and connection.
+            </p>
+            <p>
+                Based in New York, Zero Beat transforms the ordinary into the extraordinary by bringing together the worlds of music and design. Each performance is a canvas where minimalist compositions harmonize with curated environments, reflecting the essence of modern culture.
+            </p>
+        </section>
+        <section id="philosophy">
+            <h3 style="text-decoration: underline;">Our Philosophy</h3>
+            <p>
+                Zero Beat’s approach to music is driven by the belief that silence is as powerful as sound. By stripping away the excess, we create immersive experiences that leave room for personal interpretation. In everything we do, we aim to provoke thought, emotion, and discovery.
+            </p>
+        </section>
+        <section id="join">
+            <h3 style="color: #fcbf64;">Join the Movement</h3>
+            <p>
+                Explore the fusion of sound and space. Whether you’re an admirer of modern aesthetics, a lover of minimalist music, or someone who sees beauty in simplicity, Zero Beat is here to redefine your experience of art in its purest form.
+            </p>
         </section>
     </main>
     <footer>
