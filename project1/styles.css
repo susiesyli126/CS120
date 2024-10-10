@@ -4,10 +4,9 @@
 
 body {
     font-family: Roboto, sans-serif;
-    margin: 0;
-    padding: 0;
     background-image: url('images/icecream-bar2.jpeg');  
     background-size: cover;
+    background-position: center;
     color: #fff;
 }
 
@@ -18,16 +17,17 @@ header {
 
 h1 {
     text-align: center;
+    color: #ebc285; 
 }
 
 /* Navigation bar styles */
 nav ul {
     list-style-type: none;
-    display: flex; /* Flexbox for horizontal layout */
-    flex-direction: row; /* Ensure horizontal layout */
-    justify-content: center; /* Center the navigation links */
+    display: flex; 
+    flex-direction: row;  
+    justify-content: center;  
     padding: 0;
-    margin: 0 15px; /* Spacing between nav items */
+    margin: 0 15px; 
     list-style: none;
 }
 
@@ -48,9 +48,8 @@ nav a {
 }
 
 nav a:hover {
-    text-decoration: underline; /* Underline effect on hover */
+    text-decoration: underline; 
 }
-
 
 main {
     padding: 20px;
@@ -73,35 +72,39 @@ form input, form textarea, form button {
 table {
     width: 100%;
     border-collapse: collapse;
-    background-color: rgba(0, 0, 0, 0.3); /* Sheer black background for the table */
+    background-color: rgba(0, 0, 0, 0.3);  
 }
 
+.social-icons {
+    position: fixed;
+    top: 100px;
+    right: 35px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
 
 th, td {
     padding: 15px;
     text-align: left;
-    border: 1px solid #fff; /* White border for a cleaner look */
-    background-color: rgba(0, 0, 0, 0.5); /* Sheer black background for table cells */
-    color: #fff; /* Text color for better contrast against the black background */
+    border: 1px solid #fff;  
+    background-color: rgba(0, 0, 0, 0.5);  
+    color: #fff;  
 }
 
 th {
-    background-color: rgba(0, 0, 0, 0.7); /* Slightly darker black for the header */
+    background-color: rgba(0, 0, 0, 0.7); 
     font-size: 1.1em;
 }
 
-
 footer {
     position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 0.8em; /* Smaller font size */
-    background: none; /* Remove background */
-    color: #fff; /* White text color */
-    padding: 10px 0; /* Padding for spacing */
+    color: #fff; 
+    font-size: 14px;
 }
-
 
 /* Responsive Styles */
 @media (max-width: 600px) {

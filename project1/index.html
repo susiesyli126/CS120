@@ -9,28 +9,17 @@
     <link rel="stylesheet" href="styles.css">
     <title>Zero Beat - Home</title>
     <style>
-        /* Internal CSS */
-        * {
-            box-sizing: border-box;
-        }
-
         body {
             font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
+            margin: 30px;
+            padding: 10px;
             background-image: url('images/icecream-bar2.jpeg');  
-            background-size: cover;
             color: #fff;
         }
 
         header {
             background-color: rgba(0, 0, 0, 0.7);
             padding: 20px;
-        }
-
-        h1 {
-            text-align: center;
-            color: #fcbf64; /* Title color */
         }
 
         h2, h3 {
@@ -46,19 +35,10 @@
             margin: 0;
         }
 
-        nav ul li {
-            margin: 0 15px;
-        }
-
         nav a {
             color: #636363; 
             text-decoration: none;
             font-size: 1.2em;
-        }
-
-        nav a:hover {
-            color: #fcbf64; /* Hover color for links */
-            text-decoration: underline; 
         }
 
         main {
@@ -69,24 +49,18 @@
             background-color: rgba(0, 0, 0, 0.5);
             padding: 20px;
             border-radius: 10px;
-            margin-bottom: 20px; /* Space between sections */
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.7);
+            margin-bottom: 20px;  
         }
 
         /* Mobile-specific adjustments */
         @media (max-width: 768px) {
             nav ul {
-                flex-direction: column; /* Stack navigation items */
-                align-items: center; /* Center items */
+                flex-direction: column; 
+                align-items: center;  
             }
 
             nav ul li {
-                margin: 10px 0; /* Adjust margin for mobile */
+                margin: 10px 0;  
             }
         }
     </style>
@@ -105,7 +79,7 @@
     </header>
     <main>
         <section>
-            <h2 style="font-size: 2em; margin-bottom: 15px;">Welcome to Zero Beat</h2>
+            <h2 style="font-size: 2em; margin-bottom: 15px;">Welcome to Zero Beat!</h2>
             <p style="font-weight: bold;">We are a New York-based cover band specializing in artsy performances for venues like art galleries and exhibition openings. Our mission is to create a minimal yet impactful musical experience that resonates with the creative community.</p>
             <p>
                 At Zero Beat, we believe in creating more than just sound. Our music is an art form that flows through minimalist spaces, blending architecture, fashion, and rhythm into a singular experience. Like the pulse of a city, our soundscapes are designed to inspire creativity, movement, and connection.
@@ -115,13 +89,13 @@
             </p>
         </section>
         <section id="philosophy">
-            <h3 style="text-decoration: underline;">Our Philosophy</h3>
+            <h3 style="color: #ebc285;">Our Philosophy</h3>
             <p>
                 Zero Beat’s approach to music is driven by the belief that silence is as powerful as sound. By stripping away the excess, we create immersive experiences that leave room for personal interpretation. In everything we do, we aim to provoke thought, emotion, and discovery.
             </p>
         </section>
         <section id="join">
-            <h3 style="color: #fcbf64;">Join the Movement</h3>
+            <h3 style="color: #ebc285;">Join the Movement</h3>
             <p>
                 Explore the fusion of sound and space. Whether you’re an admirer of modern aesthetics, a lover of minimalist music, or someone who sees beauty in simplicity, Zero Beat is here to redefine your experience of art in its purest form.
             </p>
@@ -130,5 +104,9 @@
     <footer>
         <p>&copy; 2024 Zero Beat. All rights reserved.</p>
     </footer>
+    <div class="social-icons">
+        <a href="https://www.facebook.com"><img src="images/fb.png" alt="Facebook Icon"></a>
+        <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter Icon"></a>
+    </div>
 </body>
 </html>

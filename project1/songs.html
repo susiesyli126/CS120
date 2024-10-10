@@ -5,6 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Zero Beat - Song List</title>
+    <style>
+        main {
+            display: flex;
+            align-items: flex-start; 
+            gap: 30px; 
+            padding: 100px; 
+        }
+
+        section {
+            flex: 1; 
+        }
+
+        img {
+            width: 500px;  
+            flex-shrink: 0; 
+        }
+
+        .song-list-container h2 {
+            text-align: center; 
+            margin-bottom: 20px; 
+        }
+
+        .song-list-container ul {
+            text-align: center; 
+            list-style-type: none; 
+            padding-left: 0;  
+            line-height: 1.6;
+            background-color: rgba(42, 40, 40, 0.4);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,18 +50,37 @@
     </header>
     <main>
         <section>
-            <h2>Our Song List</h2>
-            <ul>
-                <li>"The Eclipse of You" - Ann Demeulemeester ft. Auggië</li>
-                <li>"Lovely" - Milk Flud</li>
-                <li>"4 Morant" - Com Truise</li>
-                <li>"Atone" - SLO & Bearcubs</li>
-                <li>"Mona Lisa" - Monte Booker</li>
-            </ul>
+            <div class="song-list-container">
+                <h2>Our Song List</h2>
+                    <ul>
+                        <li>"The Eclipse of You" - Ann Demeulemeester ft. Auggië</li>
+                        <li>"Lovely" - Milk Flud</li>
+                        <li>"4 Morant" - Com Truise</li>
+                        <li>"Atone" - SLO & Bearcubs</li>
+                        <li>"Mona Lisa" - Monte Booker</li>
+                        <li>"Black Sapphire - AL-90</li>
+                        <li>"Pre" - Rival Consoles</li>
+                        <li>"Nova" - Four Tet</li>
+                        <li>"9:21" - Isorinne</li>
+                        <li>"State Forest" - Burial</li>
+                        <li>"ultratronics 15" - Ryoji Ikeda</li>
+                        <li>"Makabr" - AL-90</li>
+                        <li>"Repetition" - Max Cooper</li>
+                        <li>"Transcendental Tree Map" - Max Cooper</li>
+                        <li>"Molten Landscapes" - Max Cooper</li>
+                        <li>"Memory Management" - Lorn</li>
+                        <li>"Ontario" - Novo Amor & Ed Tullett </li>
+                    </ul>
+            </div>
         </section>
+        <img src="images/rhythm-zero.jpeg" alt="rhythm0" width="550px">
     </main>
     <footer>
         <p>&copy; 2024 Zero Beat. All rights reserved.</p>
     </footer>
+    <div class="social-icons">
+        <a href="https://www.facebook.com"><img src="images/fb.png" alt="Facebook Icon"></a>
+        <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter Icon"></a>
+    </div>
 </body>
 </html>
